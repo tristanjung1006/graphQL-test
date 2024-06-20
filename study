@@ -1,0 +1,16 @@
+npm init -y
+
+npm i apollo-server graphql
+
+npm i nodemon -D
+
+package.json에서 script를 dev로 바꿔주고 nodemon server.js로 정의한다.
+
+server.js에서 apollo-server와 gql을 import해준다.
+
+npm run dev
+server.js를 수정할 때마다 nodemon이 서버를 계속 재시작한다.
+
+Query Type 안에 들어있는 것들은 마치 GET URL을 만드는 것이랑 동일시된다.
+
+모든 것은 기본적으로 nullable field로 인식된다.
